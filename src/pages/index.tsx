@@ -10,7 +10,7 @@ import {
 } from "@clerk/nextjs";
 
 export default function Home() {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
+  const hello = api.post.hello.useQuery({ text: "from tRPC" });
   const { user } = useUser();
   console.log("user", user);
 
